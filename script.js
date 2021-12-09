@@ -37,80 +37,80 @@ function generatePassword() {
   
   } else { 
     lowerCase = confirm("Will this contain lower case letters?");
-    alert("Lower case " + lowerCase);
+    console.log("Lower case " + lowerCase);
     upperCase = confirm("Will this contain upper case letters?");
-    alert("Upper case " + upperCase);
+    console.log("Upper case " + upperCase);
     Numeric = confirm("Will this contain numbers?");
-    alert("Number " + Numeric);
+    console.log("Number " + Numeric);
     specialChar = confirm("Will this contain special characters?");
-    alert("Special Character " + specialChar);
+    console.log("Special Character " + specialChar);
   };
   //
   if (!lowerCase && !upperCase && !Numeric && !specialChar) {
-    Choice = alert("You must choose a criteria");
-  // 4 true options
+    Choice = console.log("You must choose a criteria");
+  // 
   } else if (lowerCase && upperCase && Numeric && specialChar) {
     Choice = lc.concat(uc, num, sc);
-    alert(Choice);
+    console.log(Choice);
   }
   //
   else if (lowerCase && upperCase && Numeric) {
     Choice = lc.concat(uc, num);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (lowerCase && upperCase && specialChar) {
     Choice = lc.concat(uc, sc);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (lowerCase && Numeric && specialChar) {
     Choice = lc.concat(num, sc);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (upperCase && Numeric && specialChar) {
     Choice = uc.concat(num, sc);
-    alert(Choice);
+    console.log(Choice);
   }
   //
   else if (lowerCase && upperCase) {
     Choice = lc.concat(uc);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (lowerCase && Numeric) {
     Choice = lc.concat(num);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (lowerCase && specialChar) {
     Choice = lc.concat(sc);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (upperCase && Numeric) {
     Choice = uc.concat(num);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (upperCase && specialChar) {
     Choice = uc.concat(sc);
-    alert(Choice);
+    console.log(Choice);
   }
   else if (Numeric && specialChar) {
     Choice = num.concat(sc);
-    alert(Choice);
+    console.log(Choice);
   }
   //
   else if (lowerCase) {
     Choice = lc;
-    alert(Choice);
+    console.log(Choice);
   }
   else if (upperCase) {
     Choice = uc;
-    alert(Choice);
+    console.log(Choice);
   }
   else if (Numeric) {
     Choice = num;
-    alert(Choice);
+    console.log(Choice);
   }
   else if (specialChar) {
     Choice = sc;
-    alert(Choice);
+    console.log(Choice);
   };
   
   for (var i = 0; i < passwordLength; i++) {
