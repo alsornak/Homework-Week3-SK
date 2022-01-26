@@ -29,4 +29,4 @@ code editor to installed.
 
 
 Project Link: 
-https://github.com/alsornak/Homework-Week3-SK
+https://alsornak.github.io/Homework-Week3-SK/
